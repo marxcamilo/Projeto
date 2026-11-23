@@ -33,8 +33,6 @@ Entrega 02 - Projeto Aplicado I/
 ├── 05_main.py                    Demonstração das 11 etapas da AV03
 ├── 07_gerador_certificado.py     Ingestão ETL + emissão de certificado
 ├── 08_mvp_final_manual.md        Documentação final e manual do usuário
-├── 08_mvp_final_manual.pdf       Versão PDF consolidada
-├── build.sh                      Script de build (Linux)
 ├── build.bat                     Script de build (Windows)
 ├── evidencia_build.py            Gerador da evidência de build
 ├── evidencia_build.txt           Evidência gerada
@@ -91,14 +89,6 @@ Gerar o executável
 Windows:
 
 codigo-gerado.batCódigo bat
-
-Linux:
-
-codigo-gerado.shCódigo bash
-
-O executável sai em dist/. Para gerar a evidência de build:
-
-codigo-gerado.shCódigo bash
 
 Evolução das entregas
 
@@ -288,14 +278,6 @@ Limitações conhecidas
 • Sem assinatura digital — o certificado é .txt formatado, sem hash de integridade.
 • Sem cálculo de incerteza combinada — o certificado declara U e k, mas não calcula a partir das fontes.
 
-Trabalhos futuros
-
-• Interface gráfica com Tkinter ou PyQt
-• Exportação em PDF com assinatura digital
-• Cálculo completo da incerteza conforme EA-4/02
-• Dashboard de acompanhamento por equipamento
-• Integração com o sistema de manutenção da Schulz via API
-
 Documentação
 
 Documento	Conteúdo
@@ -313,30 +295,3 @@ Fator k	Multiplicador do nível de confiança (k=2 ≈ 95%)
 Tolerância	Faixa admissível de variação em torno do valor nominal
 Desvio padrão	Medida da dispersão entre medições repetidas
 EA-4/02	Referência europeia para expressão da incerteza em calibração
-
-Equipe
-
-Nome	Função
-Marx Braga Camilo	Desenvolvimento
-Gladson Goulart	Desenvolvimento
-Carla Tayna	Desenvolvimento
-Yorman Hernandez	Desenvolvimento
-
-Orientação: Prof. MSc. Hugo Menezes Barra e Prof. Rodrigo Losina
-
-Licença
-
-Projeto acadêmico desenvolvido para a Unidade Curricular Projeto Aplicado I, em parceria com a Schulz S.A. Uso restrito ao contexto da disciplina.
-
-Última atualização: novembro de 2026
-
-
-## Como criar o arquivo
-
-Como o ambiente não entrega `.md` como arquivo, crie direto no terminal:
-
-```bash
-cd "/home/alessandro/Downloads/Entrega 02 - Projeto Aplicado I"
-nano README.md
-
-Cole o conteúdo e salve com Ctrl+O, Enter, Ctrl+X.
